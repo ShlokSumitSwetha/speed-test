@@ -1,0 +1,35 @@
+#Grunt
+node_modules
+dist
+.tmp
+.sass-cache
+libs
+
+# Eclipse
+.classpath
+.project
+.settings/
+.springBeans
+
+# Intellij
+.idea/
+*/**/*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Package Files
+*.jar
+*.war
+*.iml
+*.ucls
+
+logs/
+var/
+jsonArchived/
+*LOG_FILE_IS_UNDEFINED
