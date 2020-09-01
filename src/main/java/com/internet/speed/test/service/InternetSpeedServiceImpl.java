@@ -66,6 +66,7 @@ public class InternetSpeedServiceImpl  implements InternetSpeedService{
       log.error("Error response from Fast for evaluating internet speed {}", internetSpeedResponse);
       throw new InternetSpeedTestException("Error response from Fast for evaluating internet speed:"+internetSpeedResponse);
     }
+    log.info("----------Internet {}-----------", internetSpeedResponse);
     String[] splitInternetSpeed = internetSpeedResponse.split("\\s");
     if(!ObjectUtils.isEmpty(splitInternetSpeed)&& splitInternetSpeed.length>=2){
       String unit = splitInternetSpeed[2];
